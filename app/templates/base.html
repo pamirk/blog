@@ -1,0 +1,20 @@
+<html lang="en">
+<head>
+    {% if title %}
+    <title>{{ title }} - Blog</title>
+    {% else %}
+    <title>Welcome to Blog</title>
+    {% endif %}
+</head>
+<body>
+<div class="container">
+    <header class="header">
+        <h1>Blog</h1>
+    </header>
+    <nav class="nav">
+        <a href="{{ url_for('index') }}">Home</a>
+    </nav>
+</div>
+{% block content %}{% endblock %}
+</body>
+</html>
