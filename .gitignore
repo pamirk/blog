@@ -47,3 +47,6 @@ webpack-build-config.json
 *.lock
 venv
 venv/
+# add app.db in the app directory to gitignore
+app.db
+```
