@@ -45,6 +45,7 @@ htmlcov/
 # node/webpack
 webpack-build-config.json
 *.lock
+.env
 venv
 venv/
 # add app.db in the app directory to gitignore
