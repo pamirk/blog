@@ -103,6 +103,8 @@ class User(UserMixin, db.Model):
                                         foreign_keys='Message.recipient_id',
                                         backref='recipient', lazy='dynamic')
     last_message_read_time = db.Column(db.DateTime)
+    notifications = db.relationship('Notification', backref='user',
+                                    lazy='dynamic')
 
     def follow(self, user):
         if not self.is_following(user):
